@@ -1,0 +1,18 @@
+<!-- Setup the HTML skeleton of the application -->
+<!-- .container class comes from bootstrap -->
+<div class="container">
+  <h1 class="text-center">Hello World!</h1>
+  <p class="lead text-center">This will be the demo for component data transfer.</p>
+
+  <!-- Add in Nav component at some point -->
+  <nav class="d-flex justify-content-center">
+    <a class="btn btn-primary mx-1" routerLink="/">Home</a>
+    <a class="btn btn-info mx-1" routerLink="/info">Info</a>
+  </nav>
+
+  <div class="mainContent">
+    <!-- Set up where the route components will render -->
+    <router-outlet></router-outlet>
+  </div>
+  <!-- <footer></footer> -->
+</div>

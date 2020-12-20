@@ -1,0 +1,17 @@
+<p class="lead">{{ title }}</p>
+<table class="table table-bordered">
+  <thead class="thead-dark">
+    <tr>
+      <th *ngFor="let heading of data.headings">
+        {{ heading }}
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let row of data.rows">
+      <td *ngFor="let column of row">
+        {{ column }}
+      </td>
+    </tr>
+  </tbody>
+</table>

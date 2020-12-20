@@ -1,0 +1,14 @@
+<section>
+  <h2 class="mb-4">{{ pageTitle }}</h2>
+  <!-- Pass in homeData into the table component's data property -->
+  <!--
+    We can pass data from a parent component to a child component using attributes.
+    In this case, homeData is a Javascript variable, so when we bind data to properties
+    of child components, we need to surround the property with []
+
+    If you are going to pass some string data that will be interpreted
+    directly, you don't include the [], only include [] if you want to bind
+    Javascript code.
+   -->
+  <app-table [data]="homeData" title="Textbooks"></app-table>
+</section>
